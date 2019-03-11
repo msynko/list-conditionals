@@ -2,14 +2,19 @@ import React from 'react';
 
 
 const validation  = (props) => {
-  let validationMessage = 'Text long enough! click boxes below'
+const style = {
+  fontSize:'15px'
+}
 
-  if(props.inputLength <=0){
-    validationMessage = 'Text too short!'
+
+  let validationMessage = 'Text is long enough! click any box now'
+
+  if(props.inputLength <= 0){
+    validationMessage = 'Text is too short!'
   }
    return (
      <div>
-        <p>{validationMessage}</p>
+        <p style={style}> {validationMessage} </p>
    </div>
    )
 };

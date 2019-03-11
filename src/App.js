@@ -26,12 +26,11 @@ class App extends Component {
 
     return (
       <div className="App">
-       <p>Type the text</p>
+      
+      <h2> Hello word </h2>
 
-       <input type="text" onChange={this.inputChangeHandler} value={this.state.userInput}/>
-       <p>
-       {this.state.userInput}
-       </p>
+       <input type="text" onChange={this.inputChangeHandler} value={this.state.userInput} placeholder="Type the word"/>
+
 
        <Validation inputLength={this.state.userInput.length}/>
 
